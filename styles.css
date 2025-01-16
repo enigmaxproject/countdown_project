@@ -1,0 +1,31 @@
+   /* Reset styles */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Code Pro Light', sans-serif; /* Remplacez par Code Pro Light */
+      color: black;
+    }
+
+    /* Countdown container */
+    .matrix-effect {
+      display: flex;
+      justify-content: center;
+      gap: 8px; /* Espace constant entre les groupes */
+    }
+
+    .time-group {
+      display: flex;
+      gap: 0px; /* Espace constant entre les chiffres */
+    }
+
+    .number-block {
+      background-color: transparent;
+      font-size: 15px;
+      text-align: center;
+      width: 15px; /* Largeur fixe pour chaque chiffre */
+    }
