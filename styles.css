@@ -1,10 +1,13 @@
-   /* Reset styles */
-    @font-face {
-  font-family: 'Code Pro Light';
-  src: url('fonts/CodePro-Light.woff2') format('woff2'),
-       url('fonts/CodePro-Light.woff') format('woff'),
-       url('fonts/CodePro-Light.ttf') format('truetype');
-}
+  /* Style global */
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400&display=swap'); /* Gothic A1 */
+
+@font-face {
+    font-family: 'Code Pro Light';
+    src: url('fonts/code-pro-light-webfont.woff2') format('woff2'),
+         url('fonts/code-pro-light-webfont.woff') format('woff'), /* Reset styles */
+         url('fonts/code-pro-light-webfont.ttf') format('truetype');
+    
+  }
 body {
       overflow: hidden; /* Cache tout défilement */
       margin: 0;
@@ -14,7 +17,7 @@ body {
       justify-content: center;
       align-items: center;
       height: 100vh;
-      font-family: 'Code Pro Light', sans-serif; /* Remplacez par Code Pro Light */
+      font-family: 'Code Pro Light', sans-serif !important; /* Remplacez par Code Pro Light */
       color: black;
     }
 
@@ -40,3 +43,5 @@ body {
       text-align: center;
       width: 15px; /* Largeur fixe pour chaque chiffre */
     }
+
+
