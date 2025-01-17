@@ -1,5 +1,12 @@
    /* Reset styles */
-    body {
+    @font-face {
+  font-family: 'Code Pro Light';
+  src: url('fonts/CodePro-Light.woff2') format('woff2'),
+       url('fonts/CodePro-Light.woff') format('woff'),
+       url('fonts/CodePro-Light.ttf') format('truetype');
+}
+body {
+      overflow: hidden; /* Cache tout défilement */
       margin: 0;
       padding: 0;
       background-color: white;
@@ -15,6 +22,10 @@
     .matrix-effect {
       display: flex;
       justify-content: center;
+      align-items: center;
+      height: 100vh; /* Prend toute la hauteur de l'écran */
+      width: 100%; /* Assurez-vous qu'il n'y ait pas de débordement horizontal */
+      overflow: hidden; /* Pas de défilement */
       gap: 8px; /* Espace constant entre les groupes */
     }
 
